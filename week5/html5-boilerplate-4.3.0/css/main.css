@@ -106,13 +106,8 @@ header{
     height: 462px;
     padding: 40px;
 }
-h1,h2, p {
-    margin: 0;
-
-    
-}
-.pictures{
-	padding-right: 30px;
+h1,h2, p, ul {
+    margin: 0;  
 }
 	
 h1 {
@@ -122,6 +117,10 @@ h1 {
 h2{
     font-weight: normal;
     color: #c8c8c8;
+}
+ul{
+    list-style: none;
+    padding: 0;
 }
 p{
 	padding-top: 10px;
@@ -147,14 +146,31 @@ article {
 section{
 	pedding-top: 10px;
 }
+.pictures li{
+    display: inline-block;
+    margin: 0 2% 2% 0;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px #ccc;
+    transition: border-color .3s;
+}
+.pictures li:hover{
+    border-color: #aeccf9;
+}
+nav ul {
+    margin: 30px 0 0 40px;
+}
 
+nav a {
+    color: #424242;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-top: 1px solid #e3e3e3;
+}
 
-
-
-
-
-
-
+nav a:hover {
+    background: #f3f3f3;
+}
 
 
 /* ==========================================================================
@@ -264,8 +280,18 @@ section{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media (max-width: 600px) { 
+    nav {
+        float: none;
+        width: auto;
+    }
+    article {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    
 }
 
 @media print,

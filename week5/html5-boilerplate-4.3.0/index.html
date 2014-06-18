@@ -25,9 +25,10 @@
         <div id="map-location" data-0="background-image:url(img/map-bw.png);opacity:.5;" data-500="background-image:url(img/map-color.png);opacity:1;" data-800="opacity:.5;">
             
         </div>
-        <nav>
+        <nav data-0="position:absolute;top:800px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+      
             <ul>
-                <li><a href ="#about">About</a></li>
+                <li><a href ="#About">About</a></li>
                 <li><a href ="#Outdoor Adventures">Trips</a></li>
                 <li><a href ="#garden">My Garden</a></li>
                 <li><a href ="#contact">Contact</a></li>
@@ -44,18 +45,22 @@
              </section>
             <section id="Outdoor Adventures">
                 <h3>Trips</h3>
-                <img class="pictures" src="img/falls.jpg" width="200" height="200" alt="Niagara Falls, Canada">
-				<img class="pictures" src="img/store.jpg" width="200" height="200" alt="Chicago">
-				<img class="pictures" src="img/party.jpg" width="200" height="200" alt="Columbus, OH">
-				<img class="pictures" src="img/muskegun.jpg" width="200" height="200" alt="Muskegun, MI">
+                <ul class="pictures">
+                <li><img src="img/falls.jpg" width="200" height="200" alt="Niagara Falls, Canada"></li>
+				<li><img src="img/store.jpg" width="200" height="200" alt="Chicago"></li>
+				<li><img src="img/party.jpg" width="200" height="200" alt="Columbus, OH"></li>
+				<li><img src="img/muskegun.jpg" width="200" height="200" alt="Muskegun, MI"></li>
+                </ul>
 
                 </section>
             <section id="garden">
                 <h3>My Garden</h3>
-                <img class="pictures" src="img/flower1.jpg" width="200" height="200" alt="Pink Flower">
-				<img class="pictures" src="img/plant.jpg" width="200" height="200" alt="Beautiful Plant">
-				<img class="pictures" src="img/roseplant.jpg" width="200" height="200" alt="Mini Roses">
-				<img class="pictures" src="img/sunflower.jpg" width="200" height="200" alt="Orange Sunflowers">
+                <ul class="pictures">
+                <li><img src="img/flower1.jpg" width="200" height="200" alt="Pink Flower"></li>
+				<li><img src="img/plant.jpg" width="200" height="200" alt="Beautiful Plant"></li>
+				<li><img src="img/roseplant.jpg" width="200" height="200" alt="Mini Roses"></li>
+				<li><img src="img/sunflower.jpg" width="200" height="200" alt="Orange Sunflowers"></li>
+                </ul>
 
                 </section>
             <section id="contact">
@@ -70,13 +75,32 @@
    		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 		<script src="js/vendor/skrollr.min.js"></script>
+        <script src="js/vendor/skrollr.manu.js"></script>
 		<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 		
 	    <script type="text/javascript">
+        if ($(window).width() > 600) { 
 	    var s = skrollr.init();
-	    </script>
+	   
+        skrollr.menu.init(s, {
+            //skrollr will smoothly animate to the new position using `animateTo`.
+            animate: true,
 
+            //The easing function to use.
+            easing: 'sqrt',
+
+            //How long the animation should take in ms.
+            duration: function(currentTop, targetTop) {
+                //By default, the duration is hardcoded at 500ms.
+                return 500;
+
+            },
+
+           
+        });
+    }
+        </script>
        
     </body>
 </html>
