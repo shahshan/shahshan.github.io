@@ -279,7 +279,7 @@ width: 250px;
 }
 @media (max-width: 480px) {
 	body {
-	width: auto;
+	width: 400px;
     
 }
 
