@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Pricing</title>
+        <title>Diya Photography</title>
         <meta name="description" content="The Portfolio of Diya Photography">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,10 +15,31 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript">
+
+        var image1=new Image()
+        image1.src="img/logo1.jpg"
+        var image2=new Image()
+        image2.src="img/dandiya.jpg"
+        var image3=new Image()
+        image3.src="img/hena.jpg"
+        var image4=new Image()
+        image4.src="img/mexico.jpg"
+        image5.src="img/roses.jpg"
+        var image6=new Image()
+        image6.src="img/shoes.jpg"
+        var image7=new Image()
+        image7.src="img/pyramid.jpg"
+        var image8=new Image()
+        image8.src="img/ganesh.jpg"
+
+        </script>
         
 </head>
 <body>
-        <h1><img src="img\logo1.jpg" alt= "logo" width="500" height="409" /></h1>
+     <div>
+        <img src="img/logo1.jpg" name="slide" width="500" height="500" />
+          </div>
          
 		 <nav data-0="position:absolute;top:500px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
           <ul>
@@ -30,15 +51,6 @@
            </ul>
 
         </nav>
-        <article>
-        <section>
-        <h2>Payment options</h2>
-        <p>Accepts Cash or Check</p>
-        <h2>Cities Served</h2>
-        <p>Columbus,     Dayton,     Hamilton,   Springfield,    Mansfield,  Lima,   Middletown,     Westerville,    Newark, Lancaster   and other cities within 150 miles of Dublin.</p>
-        <p>call for more details</p>
-        </section>
-        </article>    
               
    		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -47,6 +59,7 @@
 		<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript">
+
         if ($(window).width() > 600) { 
 	    var s = skrollr.init();
 	   
@@ -68,6 +81,24 @@
         });
     }
         </script>
+        <script>
+//javascript learn from online opensourse
+var step=1
+function slideit(){
+
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<8)
+step++
+else
+step=1
+
+setTimeout("slideit()",2500)
+}
+slideit()
+
+</script>
 
        
     </body>
