@@ -278,7 +278,7 @@ width: 250px;
     }
 }
 @media (max-width: 480px) {
-.wrapper { width: 980px }
+.wrapper { width: 480px }
 }
 
 @media print,
