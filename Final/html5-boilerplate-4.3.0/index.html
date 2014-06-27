@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Diya Photography</title>
+        <meta name="description" content="The Portfolio of Diya Photography">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript">
+
+        var image1=new Image()
+        image1.src="img/logo1.jpg"
+        var image2=new Image()
+        image2.src="img/dandiya.jpg"
+        var image3=new Image()
+        image3.src="img/hena.jpg"
+        var image4=new Image()
+        image4.src="img/mexico.jpg"
+        image5.src="img/roses.jpg"
+        var image6=new Image()
+        image6.src="img/shoes.jpg"
+        var image7=new Image()
+        image7.src="img/pyramid.jpg"
+        var image8=new Image()
+        image8.src="img/ganesh.jpg"
+
+        </script>
+        
+</head>
+<body>
+     <div>
+        <img src="img/logo1.jpg" name="slide" width="500" height="500" />
+          </div>
+         
+		 <nav data-0="position:absolute;top:500px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+          <ul>
+		 	<li><a href="index.html">Home</a></li>
+		    <li><a href="pics.html">Gallery</a></li>
+		 	<li><a href="media.html">Social Media</a></li>
+		 	<li><a href="contact.html">Contact US</a></li>
+		 	<li><a href="pricing.html">Pricing</a></li>
+           </ul>
+
+        </nav>
+              
+   		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="js/vendor/skrollr.min.js"></script>
+        <script src="js/vendor/skrollr.manu.js"></script>
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+
+        if ($(window).width() > 600) { 
+	    var s = skrollr.init();
+	   
+        skrollr.menu.init(s, {
+            //skrollr will smoothly animate to the new position using `animateTo`.
+            animate: true,
+
+            //The easing function to use.
+            easing: 'sqrt',
+
+            //How long the animation should take in ms.
+            duration: function(currentTop, targetTop) {
+                //By default, the duration is hardcoded at 500ms.
+                return 500;
+
+            },
+
+           
+        });
+    }
+        </script>
+        <script>
+//javascript learn from online opensourse
+var step=1
+function slideit(){
+
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<8)
+step++
+else
+step=1
+
+setTimeout("slideit()",2500)
+}
+slideit()
+
+</script>
+
+       
+    </body>
+</html>

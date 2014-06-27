@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gallery</title>
+        <meta name="description" content="The Portfolio of Diya Photography">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+</head>
+<body>
+        <h1><img src="img\logo1.jpg" alt= "logo" width="500" height="409" /></h1>
+         
+		 <nav data-0="position:absolute;top:500px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+          <ul>
+		 	<li><a href="index.html">Home</a></li>
+		    <li><a href="pics.html">Gallery</a></li>
+		 	<li><a href="media.html">Social Media</a></li>
+		 	<li><a href="contact.html">Contact US</a></li>
+		 	<li><a href="pricing.html">Pricing</a></li>
+           </ul>
+
+        </nav>
+           <article>
+            <section>
+                <h3>Wedding</h3>
+                <ul class="pictures">
+                <li><img src="img/wedding.jpg" width="200" height="200"></li>
+                <li><img src="img/roses.jpg" width="200" height="200"></li>
+                <li><img src="img/dandiya.jpg" width="200" height="200"></li>
+                <li><img src="img/cake.jpg" width="200" height="200"></li>
+                </ul>
+
+                </section>
+            <section>
+                <h3>Mexico</h3>
+                <ul class="pictures">
+                <li><img src="img/mexico.jpg" width="200" height="200"></li>
+                <li><img src="img/pyramid.jpg" width="200" height="200"></li>
+                <li><img src="img/things.jpg" width="200" height="200"></li>
+                <li><img src="img/boat.jpg" width="200" height="200"></li>
+                </ul>
+
+                </section>
+        </article>
+   		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="js/vendor/skrollr.min.js"></script>
+        <script src="js/vendor/skrollr.manu.js"></script>
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+        if ($(window).width() > 600) { 
+	    var s = skrollr.init();
+	   
+        skrollr.menu.init(s, {
+            //skrollr will smoothly animate to the new position using `animateTo`.
+            animate: true,
+
+            //The easing function to use.
+            easing: 'sqrt',
+
+            //How long the animation should take in ms.
+            duration: function(currentTop, targetTop) {
+                //By default, the duration is hardcoded at 500ms.
+                return 500;
+
+            },
+
+           
+        });
+    }
+        </script>
+
+       
+    </body>
+</html>

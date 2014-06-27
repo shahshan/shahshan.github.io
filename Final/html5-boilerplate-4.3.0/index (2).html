@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Diya Photography</title>
+        <meta name="description" content="The Portfolio of Diya Photography">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+
+<script type="text/javascript">
+<!--
+var image1=new Image()
+image1.src="img/logo1.jpg"
+var image2=new Image()
+image2.src="img/dandiya.jpg"
+var image3=new Image()
+image3.src="img/hena.jpg"
+var image4=new Image()
+image4.src="img/mexico.jpg"
+var image5=new Image()
+image5.src="img/roses.jpg"
+var image6=new Image()
+image6.src="img/shoes.jpg"
+var image7=new Image()
+image7.src="img/pyramid.jpg"
+var image8=new Image()
+image8.src="img/ganesh.jpg"
+//-->
+</script>
+</head>
+<body>
+	<article> 
+<section>
+<img src="img/logo1.jpg" name="slide" width="500" height="500" /></section> </article>
+<nav data-0="position:absolute;top:500px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+          <ul>
+		 	<li><a href="index.html">Home</a></li>
+		    <li><a href="pics.html">Gallery</a></li>
+		 	<li><a href="media.html">Social Media</a></li>
+		 	<li><a href="contact.html">Contact US</a></li>
+		 	<li><a href="pricing.html">Pricing</a></li>
+           </ul>
+
+        </nav>
+<script>
+//javascript learn from online opensourse
+var step=1
+function slideit(){
+
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+if (step<8)
+step++
+else
+step=1
+
+setTimeout("slideit()",2500)
+}
+slideit()
+
+</script>
+</body>
+</html>
